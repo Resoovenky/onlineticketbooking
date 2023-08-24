@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Online Ticket Booking Platform</title>
+</head>
+<style>
+  #t{
+    background-image:url(https://forms.app/assets/img/template-img-banner.png);
+    border-style: groove;
+    border-width: 15px;
+    border-color: black;
+    font-size: 100%;
+    /*background-repeat: no-repeat;
+    background-size: 1000px;
+    background-position: 100%;*/
+  }
+  #body{
+   /*background-color:rgb(246, 97, 33); */
+    text-align: center;
+    font-size: larger;
+
+    /*font-family: Georgia, Times, 'Times New Roman', serif;
+    border-style: groove;
+    border-radius: 50px;
+    border-width: 60px;
+    border-color: rgb(103, 101, 36);*/
+  }
+  #body1{
+    /*background-color:rgb(114, 192, 222);*/
+    text-align: center;
+    font-size: 120%;
+    font-weight: 1000;
+   /* padding-right: 40%;*/
+    /*font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    border-radius: 6%;
+    border-style:double;*/
+  }
+  #body2{
+    /*background-color:rgb(223, 225, 138);*/
+    text-align: center;
+    font-size: 120%;
+    font-weight: 1000;
+    /*padding-right: 40%;*/
+    /*font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    border-style:double;
+    border-radius: 6%;*/
+  }
+  #body3{
+    text-align: center;
+    font-size: 120%;
+    font-weight: 1000;
+    /*padding-right: 40%;*/
+  }
+  
+    </style>
+<body><div id="t">
+  <div id="body">
+  <h1><ul>Welcome to the Online Ticket Booking Platform</ul></h1>
+  <p font-style="sans-serif">Here, you can book tickets for various events.</p>
+  </div><br>
+  <div id="body1">
+  <form action="/create_user" method="post">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name"><br>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email"><br>
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password"><br><br>
+    <input type="submit" value="Create User">
+  </form>
+  </div><br>
+  <div id="body2">
+  <form action="/login_user" method="post">
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email"><br>
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password"><br><br>
+    <input type="submit" value="Login">
+  </form>
+  </div><br>
+  <div id="body3">
+  <form action="/create_event" method="post">
+    <label for="name">Event Name:</label><br>
+    <input type="text" id="name" name="name"><br><br>
+    <label for="date">Event Date:</label><br>
+    <input type="date" id="date" name="date"><br><br>
+    <label for="time">Event Time:</label><br>
+    <input type="time" id="time" name="time"><br><br>
+    <label for="location">Event Location:</label><br>
+    <input type="text" id="location" name="location"><br><br>
+    <label for="price">Event Price:</label><br>
+    <input type="number" id="price" name="price"><br><br><br>
+    <input type="submit" value="Create Event">
+  </form>
+  </div></div>
+</body>
+
+  
